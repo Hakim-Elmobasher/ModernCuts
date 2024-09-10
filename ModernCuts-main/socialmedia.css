@@ -1,0 +1,47 @@
+/* Container Styling */
+.social-icons {
+    display: flex;               /* Set the container to be a flex container */
+    justify-content: center;    /* Center the icons horizontally */
+}
+
+/* Social Media Icon Styling */
+.social-icons i {
+    color: black;             /* Set color to black */
+    margin-right: 40px;       /* Add space to the right of each icon */
+    font-size: 30px;          /* Set the size of the icons (optional) */
+
+}
+
+/* Adjust the margin for the last icon so there isn't extra space on the right */
+.social-icons i:last-child {
+    margin-right: 5;
+}
+
+.social-icons {
+    margin-top: 50px; /* Adjust this value as needed */
+}
+
+
+
+
+    .btn-lower {
+        font-size: 24px;        /* Increased font size */
+        background-color: #000000; /* Solid color for the button */
+        color: white;           /* Text color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.);  /* Shadow for 3D effect */
+        padding: 10px 20px;     /* Increase padding */
+        border-radius: 30px;     /* Rounded corners for aesthetics */
+    }
+
+    .btn-prominent:hover {
+        background-color: #ffffff; /* Slightly darker color on hover */
+    }
+
+.btn-lower {
+    margin-top: 630px; /* Adjust this value as needed */
+}
+
+.custom-nav .nav-item {
+    margin-right: 500px;  /* Adjust this value to control the spacing */
+    margin-left: 5px;   /* Adjust this value to control the spacing */
+}

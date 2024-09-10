@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and title here... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Cuts - Contact Us</title>
+
+    <!-- Bootstrap CSS and other stylesheets here... -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Internal CSS for custom styles -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Remove default margin */
+        }
+        
+        
+        
+       /* Styles for the top navigation bar */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid black; /* Black border at the bottom of top nav bar */
+}
+
+.navbar-nav {
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar-text {
+    flex: 2;
+    text-align: center;
+}
+
+/* Update the specific selector to target the title */
+.navbar-text span {
+    color: black; /* Set text color to black */
+}
+
+.navbar-nav a.nav-link {
+    color: black !important; /* Set text color to black */
+    text-decoration: none; /* Remove default underline */
+}
+
+.navbar-nav a.nav-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+ 
+
+        /* Styles for the contact header and information section */
+        .contact-header {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 28px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .contact-info i {
+            font-size: 32px; /* Bigger icon size */
+            margin-right: 10px;
+        }
+        
+        .contact-details a {
+    color: black; /* Set text color to black */
+    text-decoration: none; /* Remove default underline */
+}
+
+.contact-details a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Additional styles for the contact form */
+.form-control {
+    border: 1px solid black; /* Add black border to form fields */
+}
+
+/* Styles for the submit button */
+.btn-outline-dark {
+    border: 1px solid black; /* Add black border to the submit button */
+    color: black; /* Set text color to black */
+}
+
+
+        .vertical-line {
+            border-left: 1px solid #333;
+            height: 60px;
+            margin: 0 20px;
+        }
+
+        /* Additional styles for the contact form if needed... */
+
+        /* Styles for the bottom navigation bar */
+.bottom-navbar {
+    background-color: #f8f9fa;
+    border-top: 1px solid black; /* Black border at the top of bottom nav bar */
+}
+
+.bottom-navbar i {
+    font-size: 24px;
+    margin-right: 20px;
+    color: black; /* Set social media icons color to black */
+}
+
+.bottom-navbar a {
+    color: black; /* Set text color to black */
+    text-decoration: none; /* Remove default underline */
+}
+
+.bottom-navbar a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+        
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .social-icons a {
+            color: black;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between fixed-top">
+        <!-- Navbar content here... -->
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="home.php">HOME</a> <!-- Link to homepage_test.html -->
+            <a class="nav-item nav-link" href="about-us.php">ABOUT US</a>
+        </div>
+       <span class="navbar-text" style="color: black;">
+    MODERNCUTS
+</span>
+
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="service-selection.php">SERVICES</a>
+            <a class="nav-item nav-link" href="FAQ.html">FAQ</a> <!-- Linked to FAQ.html -->
+        </div>
+    </nav>
+
+    <!-- Contact Us Content -->
+    <div class="container">
+        <!-- Contact info and form here... -->
+        <div class="contact-header">Contact Us</div>
+        <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="contact-details">
+                <div>123 Main St</div>
+                <div>City, State, ZIP</div>
+            </div>
+            <div class="vertical-line"></div>
+             <i class="fas fa-phone"></i>
+    <div class="contact-details">
+        <a href="tel:+15551234567">+1 555-123-4567</a> <!-- Add tel: protocol for phone number -->
+    </div>
+            <div class="vertical-line"></div>
+            <i class="far fa-clock"></i>
+            <div class="contact-details">Mon-Fri 9:00 AM - 5:00 PM</div>
+            <div class="vertical-line"></div>
+            <i class="far fa-envelope"></i>
+            <div class="contact-details">info@Monderncuts.com</div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="mt-5 container">
+        <form>
+            <!-- Form fields here... -->
+            <div class="form-row">
+                <div class="col">
+                    <label for="firstName">First Name (required)</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName">
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <label for="email">Email (required)</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="message">Message (required)</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark mt-3">SUBMIT</button>
+        </form>
+    </section>
+
+    <!-- Bottom Navigation Bar with Social Media Icons -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center bottom-navbar fixed-bottom">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#"><i class="fab fa-facebook"></i></a>
+            <a class="nav-item nav-link" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="nav-item nav-link" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS and other scripts here... -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+

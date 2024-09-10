@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking System</title>
+    <link rel="stylesheet" href="path_to_your_css_file.css">
+</head>
+<body>
+    <div id="available-times"></div>
+    <button id="bookButton">Book Selected Time</button>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+    $(document).ready(function(){
+        $.get('fetch-times.php', {professional: 'JohnDoe'}, function(data){
+            let times = JSON.parse(data);
+            // Display these times in your UI, for simplicity, let's just create a list
+            times.forEach(time => {
+                $('#available-times').append('<p>' + time.date + ' ' + time.time + '</p>');
+            });
+        });
+
+        // Assuming you have a button to book a specific time
+        $('#bookButton').click(function(){
+            let timeId = ...; // You need to fetch the selected time's ID from your UI
+            $.post('book-time.php', {id: timeId}, function(response){
+                alert(response); // Booking successful or error message
+            });
+        });
+    });
+    </script>
+</body>
+</html>

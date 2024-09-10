@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Cuts - FAQs</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        /* Add custom styles here if needed */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Styles for the top navigation bar */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid black; /* Black border at the bottom of top nav bar */
+}
+
+.navbar-nav {
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar-text {
+    flex: 2;
+    text-align: center;
+}
+
+/* Update the specific selector to target the title */
+.navbar-text span {
+    color: black; /* Set text color to black */
+}
+
+.navbar-nav a.nav-link {
+    color: black !important; /* Set text color to black */
+    text-decoration: none; /* Remove default underline */
+}
+
+.navbar-nav a.nav-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+        .faq-section {
+            background-color: #ffffff;
+            padding: 40px;
+            text-align: center;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000000;
+            margin: 200px auto;
+            max-width: 800px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .social-icons a {
+            color: black;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between fixed-top">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="home.php">HOME</a>
+            <a class="nav-item nav-link" href="about-us.php">ABOUT US</a>
+        </div>
+         <span class="navbar-text" style="color: black;">
+    MODERNCUTS
+</span>
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="service-selection.php">SERVICES</a>
+            <a class="nav-item nav-link" href="contactus.html">CONTACT US</a>
+        </div>
+    </nav>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(1)">
+                How do I book an appointment?
+            </div>
+            <div class="faq-answer" id="answer1">
+                You can book an appointment by visiting our website and clicking on the "BOOK NOW" button. Follow the
+                instructions to select your preferred services, date, and time.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(2)">
+                What services do you offer?
+            </div>
+            <div class="faq-answer" id="answer2">
+                We offer a wide range of services including haircuts, styling, beard grooming, hair coloring, and various hair treatments. You can find detailed information about our services on the Services page.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(3)">
+                How can I cancel or reschedule my appointment?
+            </div>
+            <div class="faq-answer" id="answer3">
+                To cancel or reschedule your appointment, please log in to your account on our website and go to the Appointments section. There you can find options to modify or cancel your existing appointments.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(4)">
+                What safety measures are you taking in light of COVID-19?
+            </div>
+            <div class="faq-answer" id="answer4">
+                We are following all recommended guidelines and safety protocols to ensure the well-being of our customers and staff. This includes regular sanitization, social distancing, and the use of personal protective equipment.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(5)">
+                Do you offer group discounts for events like weddings?
+            </div>
+            <div class="faq-answer" id="answer5">
+                Yes, we offer special group discounts for events such as weddings and other special occasions. Please contact us directly to discuss the details of your event and the services you require.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(6)">
+                How experienced are your stylists and barbers?
+            </div>
+            <div class="faq-answer" id="answer6">
+                Our stylists and barbers are highly experienced professionals with years of expertise in the industry. They undergo regular training to stay updated with the latest trends and techniques, ensuring you receive top-notch services.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(7)">
+                Can I bring my own hair care products?
+            </div>
+            <div class="faq-answer" id="answer7">
+                Yes, you are welcome to bring your own hair care products if you have specific preferences or allergies. However, our stylists also use high-quality, professional products to ensure the best results.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(8)">
+                How long does a typical haircut appointment take?
+            </div>
+            <div class="faq-answer" id="answer8">
+                A typical haircut appointment usually takes around 30 to 45 minutes, depending on the complexity of the style and your preferences. However, for more elaborate services, the duration may vary. Feel free to ask your stylist for a more accurate estimate based on your requirements.
+            </div>
+        </div>
+        <!-- Add more FAQ items as needed -->
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Optional: Include FontAwesome for the social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById("answer" + id);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
